@@ -1,6 +1,7 @@
 package com.example.littleexpi;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -56,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
     //it resets the value of the sum to 0
     public void resetSum (View v){
         TextView sum = findViewById(R.id.textView3);
+        Log.d("logSum","Last sum was "+sum.getText());
         sum.setText("0");
     }
 }
