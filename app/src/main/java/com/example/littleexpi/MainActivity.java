@@ -1,6 +1,9 @@
 package com.example.littleexpi;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
-    public void showBand (){
-
+    public void showBand (View v){
+        String bandput = ((EditText)findViewById(R.id.editTextText)).getText().toString();
+        Toast.makeText(this, bandput, Toast.LENGTH_LONG).show();
     }
 }
